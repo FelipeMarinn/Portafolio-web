@@ -1,0 +1,182 @@
+
+:root {
+    --main-color: #e79248;
+    --gray-color: #1d2228; 
+    --black-color: #111;
+    --white-color: #dedde5;
+    --mustard-color: #c48150;
+    --secondary-color: #48a5d4;
+}
+
+
+@media (max-width: 1250px) {
+    .card {
+        display: block;
+        height: 500px;
+        margin-bottom: 200px;
+    }
+    .card .card-image-a,
+    .card-image-b,
+    .card-image-c  {
+        width: 100%;
+    }
+    .card-content {
+        top: -30px;
+        left: 0px;
+        padding: 10px 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    
+    .tech {
+        display: block;
+    }
+    .tech span {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .tech h3 {
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    .tech-list {
+        justify-content: center;
+    }
+    .tech-list li {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 10px 0 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .portfolio-card {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+    header ul {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        color: var(--black-color);
+        z-index: 1000;
+        opacity: 0.97;
+        transition: 0.3s linear;
+    }
+    header .bars,
+    header .close {
+        display: block;  
+    }
+    .navbar {
+        padding: 20px 0;
+    }
+    header .close{
+        position: absolute;
+        right: 50px;
+        top: 30px;
+    }
+    header ul.toggle {
+        top: 0;
+    }
+
+    main {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .hero {
+        min-height: 80vh;
+        align-items: center;
+    }
+    .hero .title-line {
+        position: relative;
+        left: -20px;
+        width: 100px;
+        height: 5px;
+        margin-right: 20px;
+        background-color: var(--white-color);
+    }
+
+    .about-info h2 {
+        display: inline-block;
+        width: auto;
+        margin-bottom: 10px;
+      
+    }
+    .about-info span {
+        display: block;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    
+    .tech {
+        display: block;
+    }
+    .tech span {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .tech h3 {
+        margin: 10px 0 0;
+        text-align: center;
+    }
+    .tech-list {
+        justify-content: center;
+    }
+    .tech-list li {
+        text-align: center;
+        font-size: 18px;
+        padding: 20px 10px 0 0;
+    }
+
+    .card {
+        display: block;
+        height: 200px;
+        margin-bottom: 200px;
+    }
+    .card .card-image-a,
+    .card-image-b,
+    .card-image-c  {
+        width: 100%;
+    }
+    .card-content {
+        top: -30px;
+        left: 0px;
+        padding: 10px 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .portfolio-card {
+        width: 100%;
+    }
+    .portfolio_card-title,
+    .portfolio_projects-links {
+        padding: 20px 0; 
+    }
+    .portfolio_projects-links i {
+        font-size: 1em;
+    }
+    .size-img {
+        background-repeat: no-repeat;
+    }
+
+    .contact {
+        padding: 30px 0px;
+    }
+
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> 
+    <title>Portafolio</title>
+</head>
+<body>
+
+        <header>     
+            <nav class='navbar animate__animated animate__fadeIn'> 
+                <div class="brand pointer">
+                    <a href="">
+                        <h2> D<span>M</span> </h2>   
+                    </a>         
+                </div>
+                <div class="nav-icons">
+                    <li>
+                        <a href="https://github.com/FelipeMarinn" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/felipe07" target="_blank"> <i class="fab fa-codepen pointer"></i> </a> 
+                    </li> 
+                    <li>
+                        <a href="https://www.linkedin.com/in/marin-daniel" target="_blank"> <i class="fab fa-linkedin pointer"></i> </a> 
+                    </li>
+                </div>
+                <div class="bars">
+                    <i class="fas fa-bars" onclick="menuToggle()"></i>    
+                </div>
+                <ul id="menu-toggle">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="close" onclick="menuToggle()">
+                        <i class="fas fa-times"></i>    
+                    </li>
+                </ul>
+            </nav>     
+        </header>
+        
+        <main>
+            <section class="hero">
+                <div id='hero-content'>
+                    <h1>
+                        Hi,
+                        <div class="title-custom">
+                            <div class="title-line"></div>
+                            <div class="text-custom"> I'm </div>     
+                        </div>
+                        <span>Daniel</span> Marin 
+                    </h1>
+                    <p> Y soy un <b>Frontend Developer</b> apasionado y dedicado autodidacta. </p>
+                    <a download href="#">
+                        <button class="Cv-bottom pointer"> Download CV </button>
+                    </a>  
+                </div>   
+            </section>
+
+            <section class="about" id='about'>
+                <div class="container">
+                    <div class="about-info">
+                        <h2> About me </h2>
+                        <span></span>
+                        <div class="width">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum, quasi totam doloribus dolore impedit corrupti voluptates qui ducimus! Animi tempora ipsa et modi dolore officiis nisi voluptatum, repellat voluptatem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum, quasi totam doloribus dolore impedit corrupti voluptates qui ducimus! Animi tempora ipsa et modi dolore officiis nisi voluptatum, repellat voluptatem.</p>
+                        </div>      
+                    </div>
+                    <div class="tech">
+                        <span></span>
+                        <h3> technologies </h3>
+                        <ul class="tech-list">    
+                            <li><i class="fab fa-vuejs"></i></li>
+                            <li><i class="fab fa-react"></i></li>
+                            <li><i class="fab fa-bootstrap"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-js-square"></i></li>    
+                        </ul>
+                    </div>    
+                </div>      
+            </section>
+
+            <section class="work" id='works'>
+                <h2>Works</h2>
+                <div class="container">
+
+                    <div class="card">
+                        <div class="card-image-a"></div>
+                        <div class="card-content">
+                            <h4>1. App</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <a class="link-work" href="https://felipemarinn.github.io/shipping-cart/" target="_blank">Ver mas</a>
+                        </div>
+                    </div>    
+
+                    <div class="card">
+                        <div class="card-image-b"></div>
+                        <div class="card-content">
+                            <h4>1. App</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <a class="link-work" href="https://felipemarinn.github.io/heroesApp-curso-react/" target="_blank">Ver mas</a>
+                        </div>
+                    </div>   
+
+                    <div class="card">
+                        <div class="card-image-c"></div>
+                        <div class="card-content">
+                            <h4>1. App</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <a class="link-work" href=" https://felipemarinn.github.io/online-songs/" target="_blank">Ver mas</a>
+                        </div>
+                    </div>  
+
+                </div>      
+            </section>
+
+            <section class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="container">
+                    
+                    <div class="portfolio-card">
+                        <div class="size-img portfolio_card-img-a"></div>
+                        <div class="portfolio_card--body">
+                            <div class="portfolio_card-title">
+                                <h4>Project description</h4>
+                            </div>
+                            <div class="portfolio_projects-links">
+                                <a href="https://github.com/FelipeMarinn/to-do-list-with-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                                <a href=" https://felipemarinn.github.io/to-do-list-with-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="size-img portfolio_card-img-b"></div>
+                        <div class="portfolio_card--body">
+                            <div class="portfolio_card-title">
+                                <h4>Project description</h4>
+                            </div>
+                            <div class="portfolio_projects-links">
+                                <a href="https://github.com/FelipeMarinn/blog-personal.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                                <a href="https://felipemarinn.github.io/blog-personal/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="size-img portfolio_card-img-c"></div>
+                        <div class="portfolio_card--body">
+                            <div class="portfolio_card-title">
+                                <h4>Project description</h4>
+                            </div>
+                            <div class="portfolio_projects-links">
+                                <a href="https://github.com/FelipeMarinn/Mis-gastos-page-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                                <a href="https://felipemarinn.github.io/Mis-gastos-page-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="size-img portfolio_card-img-d"></div>
+                        <div class="portfolio_card--body">
+                            <div class="portfolio_card-title">
+                                <h4>Project description</h4>
+                            </div>
+                            <div class="portfolio_projects-links">
+                                <a href="https://github.com/FelipeMarinn/spa-vanilla-javascript.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                                <a href="https://felipemarinn.github.io/spa-vanilla-javascript/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact-target">
+                    <h2>Get In Touch</h2>
+                    <p>© Daniel Marin</p>
+                    <p class="contact-email">E-mail:  pipekd47@outlook.es</p>
+                    <a href="mailto:pipekd47@outlook.es ">
+                        <button href class="contact-bottom pointer"> Contact </button>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div>
+                <p> © 2021 Daniel Marin | Derechos reservados </p>
+            </div>
+        </footer>
+        
+        <script>
+
+            let header = document.querySelector('header')
+
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+
+                header.style.top = '-' + value * 0.5 + 'px'      
+            })
+
+            let menu = document.getElementById('menu-toggle')
+
+            function menuToggle() {
+                console.log('dasd')
+                if ( !menu.classList.contains('toggle') ) {
+                    console.log('add')
+                    menu.classList.add('toggle')
+                } else {
+                    console.log('removido')
+                    menu.classList.remove('toggle')
+                }
+                
+            }
+
+
+        </script>
+
+</body>
+</html>
