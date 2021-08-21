@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hint.css">
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -38,9 +39,9 @@
                     <i class="fas fa-bars" onclick="menuToggle()"></i>    
                 </div>
                 <ul id="menu-toggle">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" onclick="menuToggle()">About</a></li>
+                    <li><a href="#works" onclick="menuToggle()">Works</a></li>
+                    <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
                     <li class="close" onclick="menuToggle()">
                         <i class="fas fa-times"></i>    
                     </li>
@@ -59,7 +60,7 @@
                         </div>
                         <span>Daniel</span> Marin 
                     </h1>
-                    <p> Y soy un <b>Frontend Developer</b> apasionado y dedicado autodidacta. </p>
+                    <!-- <p> Y soy un <b>Frontend Developer</b> apasionado y dedicado autodidacta. </p> -->
                     <a download href="#">
                         <button class="Cv-bottom pointer"> Download CV </button>
                     </a>  
@@ -70,22 +71,53 @@
                 <div class="container">
                     <div class="about-info">
                         <h2> About me </h2>
-                        <span></span>
+                        <span class="dir"></span>
                         <div class="width">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum, quasi totam doloribus dolore impedit corrupti voluptates qui ducimus! Animi tempora ipsa et modi dolore officiis nisi voluptatum, repellat voluptatem.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cum, quasi totam doloribus dolore impedit corrupti voluptates qui ducimus! Animi tempora ipsa et modi dolore officiis nisi voluptatum, repellat voluptatem.</p>
+                            <p>
+                                Hola mi nombre es Daniel y soy <b>Frontend Developer</b>,
+                                Aspirante a Full Stack Developer y <b>estudiante autodidacta</b>. 
+                                ademas del diseño tambien me gusta mucho el desarrollo web, mi gusto por este no fue espontaneo 
+                                mas bien es algo que se fue dando en el proceso de ir conociendo el mundo de la tecnologia.
+                            </p>
+                            <p>
+                                Mi enfoque principal esta en trabajar en <b>metodoligias con React</b> aun que
+                                tambien un poco de <b>Vue</b>, utilizando redux en React para manejar una jerarquia
+                                de trabajo agíl escalable. 
+                            </p>
                         </div>      
                     </div>
                     <div class="tech">
-                        <span></span>
+                        <span class="dir"></span>
                         <h3> technologies </h3>
                         <ul class="tech-list">    
-                            <li><i class="fab fa-vuejs"></i></li>
-                            <li><i class="fab fa-react"></i></li>
-                            <li><i class="fab fa-bootstrap"></i></li>
-                            <li><i class="fab fa-css3-alt"></i></li>
-                            <li><i class="fab fa-html5"></i></li>
-                            <li><i class="fab fa-js-square"></i></li>    
+                            <li>
+                                <span class="hint--bottom" aria-label="Vue">
+                                    <i class="fab fa-vuejs"></i> 
+                                </span>
+                            </li>  
+                            <li>
+                                <span class="hint--bottom" aria-label="React">
+                                    <i class="fab fa-react"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hint--bottom" aria-label="Bootstrap">
+                                    <i class="fab fa-bootstrap"></i>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="hint--bottom" aria-label="CSS3">
+                                    <i class="fab fa-css3-alt"></i>
+                            </li>
+                            <li>
+                                <span class="hint--bottom" aria-label="HTML5">
+                                    <i class="fab fa-html5"></i></li>
+                                </span>
+                            <li>
+                                <span class="hint--bottom" aria-label="Javascript">
+                                    <i class="fab fa-js-square"></i>
+                                </span>
+                            </li>    
                         </ul>
                     </div>    
                 </div>      
@@ -98,8 +130,11 @@
                     <div class="card">
                         <div class="card-image-a"></div>
                         <div class="card-content">
-                            <h4>1. App</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <h3>1. Shipping Cart</h3>
+                            <p>
+                                Sitio web con una lista de productos Nike los cuales puedes agregar 
+                                el carrito de compras y tambien puedes obtener una vista a los detalles de cada uno de los productos.
+                            </p>
                             <a class="link-work" href="https://felipemarinn.github.io/shipping-cart/" target="_blank">Ver mas</a>
                         </div>
                     </div>    
@@ -107,8 +142,11 @@
                     <div class="card">
                         <div class="card-image-b"></div>
                         <div class="card-content">
-                            <h4>1. App</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <h3>2. Asociaciones</h3>
+                            <p>
+                                Pagina web sencilla, con pequeñas animaciones y un menu simple,
+                                con la presentacion de los heroes de DC Y Marvel. 
+                            </p>
                             <a class="link-work" href="https://felipemarinn.github.io/heroesApp-curso-react/" target="_blank">Ver mas</a>
                         </div>
                     </div>   
@@ -116,8 +154,11 @@
                     <div class="card">
                         <div class="card-image-c"></div>
                         <div class="card-content">
-                            <h4>1. App</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quasi ipsum itaque rerum corporis vero!</p>
+                            <h3>3. Online Songs</h3>
+                            <p>
+                                Un sitio web con un listado de canciones, 
+                                puedes ir directamente a escuchar al top 3 o ya sea buscar tu preferida.
+                            </p>
                             <a class="link-work" href=" https://felipemarinn.github.io/online-songs/" target="_blank">Ver mas</a>
                         </div>
                     </div>  
@@ -128,56 +169,89 @@
             <section class="portfolio">
                 <h2>Portfolio</h2>
                 <div class="container">
-                    
+
                     <div class="portfolio-card">
-                        <div class="size-img portfolio_card-img-a"></div>
-                        <div class="portfolio_card--body">
-                            <div class="portfolio_card-title">
-                                <h4>Project description</h4>
-                            </div>
-                            <div class="portfolio_projects-links">
-                                <a href="https://github.com/FelipeMarinn/to-do-list-with-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
-                                <a href=" https://felipemarinn.github.io/to-do-list-with-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
-                            </div>
+                        <div class="image-port portfolio_card-img-a"></div>
+                        <div class="portfolio_card-text">
+                            <h3><a href="https://felipemarinn.github.io/to-do-list-with-Vue/" target="_black"> Lista de tareas </a></h3>
+                            <p>
+                                Aplicacion Web de una sola pagina en la que
+                                puedes crer una lista de tareas, eliminarlas 
+                                o marcas las que ya realizaste.
+                            </p>
+                        </div>
+                        <div class="portfolio_card-tech">
+                            <ul>
+                                <li>Vue</li>
+                            </ul>
+                        </div>
+                        <div class="portafolio_card-links">
+                            <a href="https://github.com/FelipeMarinn/to-do-list-with-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                            <a href=" https://felipemarinn.github.io/to-do-list-with-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
                         </div>
                     </div>
 
                     <div class="portfolio-card">
-                        <div class="size-img portfolio_card-img-b"></div>
-                        <div class="portfolio_card--body">
-                            <div class="portfolio_card-title">
-                                <h4>Project description</h4>
-                            </div>
-                            <div class="portfolio_projects-links">
-                                <a href="https://github.com/FelipeMarinn/blog-personal.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
-                                <a href="https://felipemarinn.github.io/blog-personal/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
-                            </div>
+                        <div class="image-port portfolio_card-img-b"></div>
+                        <div class="portfolio_card-text">
+                            <h3><a href="https://felipemarinn.github.io/blog-personal/" target="_black"> Blog personal </a></h3>
+                            <p>
+                                Un blog en cual puedes ver secciones como publicaciones,
+                                conctato, sobre mi etc. 
+                            </p>
+                        </div>
+                        <div class="portfolio_card-tech">
+                            <ul>
+                                <li>Html</li>
+                                <li>Css</li>
+                            </ul>
+                        </div>
+                        <div class="portafolio_card-links">
+                            <a href="https://github.com/FelipeMarinn/blog-personal.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                            <a href="https://felipemarinn.github.io/blog-personal/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
                         </div>
                     </div>
 
                     <div class="portfolio-card">
-                        <div class="size-img portfolio_card-img-c"></div>
-                        <div class="portfolio_card--body">
-                            <div class="portfolio_card-title">
-                                <h4>Project description</h4>
-                            </div>
-                            <div class="portfolio_projects-links">
-                                <a href="https://github.com/FelipeMarinn/Mis-gastos-page-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
-                                <a href="https://felipemarinn.github.io/Mis-gastos-page-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
-                            </div>
+                        <div class="image-port portfolio_card-img-c"></div>
+                        <div class="portfolio_card-text">
+                            <h3><a href="https://felipemarinn.github.io/Mis-gastos-page-Vue/" target="_black"> Mis gastos </a></h3>
+                            <p>
+                                Esta aplicacion web te permite gestionar tus gastos,
+                                puedes agregar el tipo de este, su valor, su nombre y tener un monto 
+                                total de todos ellos.
+                            </p>
+                        </div>
+                        <div class="portfolio_card-tech">
+                            <ul>
+                                <li>Vue</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                        <div class="portafolio_card-links">
+                            <a href="https://github.com/FelipeMarinn/Mis-gastos-page-Vue.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                            <a href="https://felipemarinn.github.io/Mis-gastos-page-Vue/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
                         </div>
                     </div>
 
                     <div class="portfolio-card">
-                        <div class="size-img portfolio_card-img-d"></div>
-                        <div class="portfolio_card--body">
-                            <div class="portfolio_card-title">
-                                <h4>Project description</h4>
-                            </div>
-                            <div class="portfolio_projects-links">
-                                <a href="https://github.com/FelipeMarinn/spa-vanilla-javascript.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
-                                <a href="https://felipemarinn.github.io/spa-vanilla-javascript/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
-                            </div>
+                        <div class="image-port portfolio_card-img-d"></div>
+                        <div class="portfolio_card-text">
+                            <h3><a href="https://felipemarinn.github.io/spa-vanilla-javascript/" target="_black"> 100tifi.co </a></h3>
+                            <p>
+                                En esta pagina se puede ver una lista de los personajes
+                                de la serie rick and morthy los cuales son tomados de una API,
+                                puedes ver los detalles de cada uno en su apartado.
+                            </p>
+                        </div>
+                        <div class="portfolio_card-tech">
+                            <ul>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="portafolio_card-links">
+                            <a href="https://github.com/FelipeMarinn/spa-vanilla-javascript.git" target="_blank"> <i class="fab fa-github pointer"></i> </a>
+                            <a href="https://felipemarinn.github.io/spa-vanilla-javascript/" target="_blank"> <i class="fas fa-globe-americas"></i> </a>
                         </div>
                     </div>
 
@@ -215,15 +289,18 @@
             })
 
             let menu = document.getElementById('menu-toggle')
+            let body = document.querySelector('body')
 
             function menuToggle() {
                 console.log('dasd')
                 if ( !menu.classList.contains('toggle') ) {
                     console.log('add')
                     menu.classList.add('toggle')
+                    body.classList.add('scroll')
                 } else {
                     console.log('removido')
                     menu.classList.remove('toggle')
+                    body.classList.remove('scroll')
                 }
                 
             }

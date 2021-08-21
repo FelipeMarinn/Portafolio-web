@@ -4,13 +4,7 @@
     --gray-color: #1d2228; 
     --black-color: #111;
     --white-color: #dedde5;
-    --mustard-color: #c48150;
-    --secondary-color: #48a5d4;
-
-    --fz-sm: 12px;
-    --fz-md: 13px;
-    --fz-lg: 14px;
-    --fz-xl: 16px;
+    --mustard-color: #c48150;  
 }
 
 * {
@@ -49,7 +43,7 @@ button {
     border-radius: 4px;
     color: var(--white-color);
     padding: 15px 32px;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 50px;
 }
 
@@ -68,6 +62,9 @@ li {
 
 h2 {
     margin-bottom: 50px;
+}
+h3 {
+    margin-bottom: 10px;
 }
 
 .width {
@@ -94,6 +91,7 @@ h2 {
 
     transition: ease-in 0.3s;
 }
+
 .brand {
     padding: 0 20px;
 }
@@ -114,7 +112,6 @@ header .close {
     display: none;
     font-size: 20px;
 }
-
 header ul {
     display: flex;
     width: 50%;
@@ -163,7 +160,7 @@ main {
 }
 .hero p {
     max-width: 540px;
-    font-size: var(--fz-xl);
+    font-size: 16px;
     margin-top: 20px;
 }
 .hero .title-custom {
@@ -198,7 +195,10 @@ main {
     width: auto;
     margin-right: 20px;
 }
-.about-info span {
+.about-info p {
+    margin-bottom: 20px;
+}
+.about .dir {
     display: inline-block;
     height: 1px;
     width: 300px;
@@ -214,7 +214,7 @@ main {
     position: relative;
     margin-top: 50px;
 }
-.tech span {
+.tech .dir {
     display: inline-block;
     height: 1px;
     width: 300px;
@@ -224,7 +224,7 @@ main {
     margin: 0 20px;
     width: auto;
 }
-.tech-list{
+.tech-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -234,6 +234,26 @@ main {
     width: 60px;
     font-size: 25px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.fa-vuejs:hover {
+    color: #41b883;
+}
+.fa-react:hover {
+    color: #61DBFB;
+}
+.fa-bootstrap:hover {
+    color:  #563d7c;
+}
+.fa-css3-alt:hover {
+    color: #2965f1;
+}
+.fa-html5:hover {
+    color: #f06529;
+}
+.fa-js-square:hover {
+    color: #F0DB4F;
 }
 
 
@@ -332,27 +352,61 @@ main {
 /* Portfolio */
 
 .portfolio .container {
-    height: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .portfolio-card {
-    max-width: 300px;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px 180px 40px 50px;
+    grid-template-areas: "image"  "text" "tech" "links";
+
+    border-radius: 18px;
+    background: var(--white-color);
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 10px ;
 }
-.portfolio_card--body {
+.portfolio-card a {  
+    color: var(--black-color);
+}
+.portfolio-card a:hover {  
+    color: var(--main-color);
+}
+.image-port {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio_card-text {
+    color: var(--black-color);
+    grid-area: text;
+    margin: 15px 25px;
+    font-size: 15px;
+}
+.portfolio_card-tech {
+    grid-area: tech;
+    color: var(--gray-color);
+    font-weight: 600;
+    align-self: center;
+}
+.portfolio_card-tech ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
-.size-img {
-    width: 100%;
-    height: 150px;
-    background-size: contain;
-    background-repeat: no-repeat;
+.portfolio_card-tech ul li {
+    padding: 5px;
 }
+.portafolio_card-links a {
+    align-self: center;
+    font-size: 1.5em;
+}
+
 .portfolio_card-img-a {
-    background-image: url(../assets/img/lista_tareas.png); 
+    background-image: url(../assets/img/lista_tareas.png);
 }
 .portfolio_card-img-b {
     background-image: url(../assets/img/Mi-Blog.png);
@@ -363,23 +417,7 @@ main {
 .portfolio_card-img-d {
     background-image: url(../assets/img/Cientifico.png);
 }
-.portfolio_card-title {
-    padding: 20px 0 20px 20px;
-}
-.portfolio_projects-links {
-    padding: 20px;
-}
-.portfolio_projects-links a {
-    margin-right: 10px;
-}
-.portfolio_projects-links a:hover {
-    color: #495670;
 
-    transition: ease-in 0.3s;
-}
-.portfolio_projects-links i {
-    font-size: 1.5em;
-}
 
 .contact {
     position: relative;
