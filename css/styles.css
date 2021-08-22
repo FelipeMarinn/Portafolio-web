@@ -120,7 +120,7 @@ header ul {
 header ul a {
     padding: 10px 20px;
     letter-spacing: 0.1rem;
-    font-size: var(--fz-xl);
+    font-size: 16px;
 }
 header ul a:focus {
     color: var(--main-color);
@@ -353,7 +353,7 @@ main {
 
 .portfolio .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .portfolio-card {
@@ -416,6 +416,9 @@ main {
 }
 .portfolio_card-img-d {
     background-image: url(../assets/img/Cientifico.png);
+}
+.portfolio_card-img-e {
+    background-image: url(../assets/img/js-profile.png);
 }
 
 
