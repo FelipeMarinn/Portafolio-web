@@ -1,0 +1,31 @@
+{
+  "name": "my-official-website",
+  "version": "1.0.0",
+  "description": "Sitio web oficial incluye mi portafolio e imformacion de contacto",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config=webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeMarinn/sitio-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeMarinn/sitio-web/issues"
+  },
+  "homepage": "https://github.com/FelipeMarinn/sitio-web#readme",
+  "devDependencies": {
+    "css-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "optimize-css-assets-webpack-plugin": "^6.0.1"
+  }
+}

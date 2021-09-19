@@ -18,6 +18,7 @@
 
 body, html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     background-color: var(--black-color);
     width: 100%;
     min-height: 100%;
@@ -185,12 +186,11 @@ main {
 
 /* About ---- */
 
-.about {
+
+.about-info{
     display: flex;
-    align-items: center;
-    height: 700px;
 }
-.about-info h2 {
+.about h2 {
     display: inline-block;
     width: auto;
     margin-right: 20px;
@@ -198,6 +198,7 @@ main {
 .about-info p {
     margin-bottom: 20px;
 }
+
 .about .dir {
     display: inline-block;
     height: 1px;
@@ -205,36 +206,21 @@ main {
     background-color: var(--mustard-color);
 }
 
-
-/* Tech ------- */
-
-.tech {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 50px;
-}
-.tech .dir {
-    display: inline-block;
-    height: 1px;
-    width: 300px;
-    background-color: var(--mustard-color);
-}
-.tech h3 {
-    margin: 0 20px;
-    width: auto;
-}
 .tech-list {
     display: flex;
-    align-items: center;
+    justify-content: right;
     flex-wrap: wrap;
 }
 .tech-list li {
     color: var(--white-color);
-    width: 60px;
-    font-size: 25px;
-    padding: 10px;
+    width: auto;
+    margin-right: 30px;
+    padding: 0;
     cursor: pointer;
+}
+
+.tech-list li i {
+    font-size: 25px;
 }
 
 .fa-vuejs:hover {
@@ -266,8 +252,7 @@ main {
 .card {
     display: flex;
     align-items: center;
-    position: relative;
-    max-width: 100%;
+    width: 100%;
     height: 500px;
     background-color: var(--gray-color); 
     color: var(--black-color);
