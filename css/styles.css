@@ -269,18 +269,20 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .card-image-a {
+    background-image: url(../assets/img/CalendarApp.png);
+    background-position: left;
+}
+.card-image-b {
     background-image: url(../assets/img/Nike.png);
     background-position: center;
 }
-.card-image-b {
+.card-image-c {
     background-image: url(../assets/img/Hero.png);
     background-position: center;
 }
-.card-image-c {
-    background-image: url(../assets/img/Music.png);
-    background-position: center;
-}
+
 .card-content {
     position: relative;
     left: -180px;
@@ -391,21 +393,23 @@ main {
 }
 
 .portfolio_card-img-a {
-    background-image: url(../assets/img/lista_tareas.png);
+    background-image: url(../assets/img/js-profile.png);
 }
 .portfolio_card-img-b {
-    background-image: url(../assets/img/Mi-Blog.png);
+    background-image: url(../assets/img/Cientifico.png);
 }
 .portfolio_card-img-c {
     background-image: url(../assets/img/project_vue.png);
 }
 .portfolio_card-img-d {
-    background-image: url(../assets/img/Cientifico.png);
+    background-image: url(../assets/img/Mi-Blog.png);
 }
 .portfolio_card-img-e {
-    background-image: url(../assets/img/js-profile.png);
+    background-image: url(../assets/img/lista_tareas.png);
 }
-
+.portfolio_card-img-f {
+    background-image: url(../assets/img/OnlineSongs.png);
+}
 
 .contact {
     position: relative;
