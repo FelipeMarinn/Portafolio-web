@@ -225,12 +225,17 @@ main {
 .tech-list li i {
     font-size: 25px;
 }
+.tech-list .fa-react {
+    color: #61DBFB;
+    font-size: 48px;
+}
 
-.fa-vuejs:hover {
+/* .fa-vuejs:hover {
     color: #41b883;
 }
 .fa-react:hover {
     color: #61DBFB;
+    font-size: 48px;
 }
 .fa-bootstrap:hover {
     color:  #563d7c;
@@ -243,6 +248,12 @@ main {
 }
 .fa-js-square:hover {
     color: #F0DB4F;
+}
+.fa-database:hover {
+    color: rgb(44 122 212);
+} */
+.mongodb {
+    color: white;
 }
 
 
